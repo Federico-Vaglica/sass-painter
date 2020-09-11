@@ -1,0 +1,41 @@
+header {
+    width: 100vw;
+    background-color: $headerColor;
+    color: white;
+}
+
+.navbar {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.action {
+    width: 100%;
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 5px;
+        line-height: 2;
+        padding: 5px 0;
+        li {
+            padding-right: 10px;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.nav-header {
+    display: flex;
+    a{
+        padding: 10px;
+    }
+    ul{
+        display: flex;
+        justify-content: flex-start;
+        li {
+            padding: 20px 30px;
+        }        
+    }
+}
