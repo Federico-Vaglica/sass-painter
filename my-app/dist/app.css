@@ -56,3 +56,39 @@ header {
   padding: 20px 30px;
 }
 
+.main {
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+}
+
+.main .jumbotron {
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main .jumbotron .prod-info {
+  padding-right: 40px;
+}
+
+.main .jumbotron .prod-info .title {
+  line-height: 1.5;
+  padding: 35px 0px 15px;
+  font-size: 25px;
+}
+
+.main .jumbotron .prod-info .description h1 {
+  font-weight: lighter;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.main .jumbotron .prod-info .description ul li {
+  padding: 12px 0px;
+}
+
+.main .jumbotron .priceBox {
+  background-color: black;
+  margin-top: 20px;
+}
+
