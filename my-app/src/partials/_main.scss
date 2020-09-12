@@ -1,5 +1,5 @@
 .sticky-nav{
-    width: 100vw;
+    width: 100%;
     background-color: $stickyNav;
     
     position: -webkit-sticky;
@@ -7,10 +7,7 @@
     position: sticky;
 }
 
-.container-sub {
-    width:60vw;
-    margin: 0 auto;
-}
+
 
 .subNav {
     display: flex;
@@ -26,3 +23,49 @@
         }
     }
 }
+
+.key-pillars{
+    background: #222;
+    color: #fff;
+}
+
+.col {
+   
+
+    h2{
+        padding: 60px 0px 30px;
+    }
+    p{
+        line-height: 1.5;
+        font-size: 18px;
+    }
+}
+
+.first{
+    text-align: center;
+}
+
+.second{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:50px;
+}
+
+.text-holder{
+    width: 50%;
+}
+
+.img-container{
+    width: 50%;
+  
+}
+
+
+.img-col{
+    padding: 40px 30px;
+    img{
+        width: 70%;
+    }
+}
+
+

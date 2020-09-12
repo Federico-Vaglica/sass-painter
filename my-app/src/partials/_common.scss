@@ -8,6 +8,8 @@ $stickyNav : #E6E6E6;
     box-sizing: border-box;
 }
 
+
+
 ul {
     list-style-type: none;
 }
@@ -39,3 +41,12 @@ a {
     color: white;
 }
 
+.image-bg-01, .image-bg-02 {
+    width:100%;
+   
+}
+
+.container-sub {
+    width:60vw;
+    margin: 0 auto;
+}

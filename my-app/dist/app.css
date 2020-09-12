@@ -34,6 +34,16 @@ a {
   color: white;
 }
 
+.image-bg-01,
+.image-bg-02 {
+  width: 100%;
+}
+
+.container-sub {
+  width: 60vw;
+  margin: 0 auto;
+}
+
 header {
   width: 100vw;
   background-color: #101010;
@@ -200,16 +210,11 @@ header {
 }
 
 .sticky-nav {
-  width: 100vw;
+  width: 100%;
   background-color: #E6E6E6;
   position: -webkit-sticky;
   top: 0;
   position: sticky;
-}
-
-.container-sub {
-  width: 60vw;
-  margin: 0 auto;
 }
 
 .subNav {
@@ -227,5 +232,45 @@ header {
 .subNav a:hover {
   background-color: whitesmoke;
   color: black;
+}
+
+.key-pillars {
+  background: #222;
+  color: #fff;
+}
+
+.col h2 {
+  padding: 60px 0px 30px;
+}
+
+.col p {
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.first {
+  text-align: center;
+}
+
+.second {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.text-holder {
+  width: 50%;
+}
+
+.img-container {
+  width: 50%;
+}
+
+.img-col {
+  padding: 40px 30px;
+}
+
+.img-col img {
+  width: 70%;
 }
 
