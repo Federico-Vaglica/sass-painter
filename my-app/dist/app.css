@@ -8,6 +8,32 @@ ul {
   list-style-type: none;
 }
 
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 header {
   width: 100vw;
   background-color: #101010;
@@ -17,6 +43,7 @@ header {
 .navbar {
   width: 70vw;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .action {
@@ -27,16 +54,23 @@ header {
   display: flex;
   justify-content: flex-end;
   padding-top: 5px;
-  line-height: 2;
-  padding: 5px 0;
 }
 
 .action ul li {
-  padding-right: 10px;
+  padding: 10px 25px;
+  color: #989898;
 }
 
-.action ul a {
-  text-decoration: none;
+.action ul li:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.action .selecet {
+  font-size: 12px;
+  line-height: 16px;
+  vertical-align: top;
+  color: #000;
 }
 
 .nav-header {
@@ -48,47 +82,150 @@ header {
 }
 
 .nav-header ul {
+  font-size: 15px;
   display: flex;
   justify-content: flex-start;
+  text-align: center;
 }
 
 .nav-header ul li {
   padding: 20px 30px;
+  cursor: pointer;
 }
 
-.main {
+.nav-header ul li:hover {
+  color: black;
+  background-color: white;
+}
+
+.main-header {
   background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.main .jumbotron {
+.main-header .jumbotron {
   width: 70vw;
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
 }
 
-.main .jumbotron .prod-info {
-  padding-right: 40px;
+.main-header .jumbotron .prod-info {
+  min-width: 40%;
+  padding: 30px 40px 10px;
 }
 
-.main .jumbotron .prod-info .title {
-  line-height: 1.5;
-  padding: 35px 0px 15px;
-  font-size: 25px;
+.main-header .jumbotron .prod-info .title {
+  line-height: 1.2;
+  font-size: 20px;
 }
 
-.main .jumbotron .prod-info .description h1 {
+.main-header .jumbotron .prod-info .description h1 {
   font-weight: lighter;
-  font-size: 25px;
+  font-size: 20px;
   padding-bottom: 20px;
 }
 
-.main .jumbotron .prod-info .description ul li {
-  padding: 12px 0px;
+.main-header .jumbotron .prod-info .description ul li {
+  padding: 10px 0px;
 }
 
-.main .jumbotron .priceBox {
+.main-header .jumbotron .prod-info .description .btn {
+  background-color: #666;
+}
+
+.main-header .jumbotron .priceBox {
   background-color: black;
   margin-top: 20px;
+  padding: 20px 20px;
+  max-width: 35%;
+}
+
+.main-header .jumbotron .priceBox .price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  align-items: center;
+}
+
+.main-header .jumbotron .priceBox .price .price-dwn {
+  padding-top: 20px;
+}
+
+.main-header .jumbotron .priceBox .price .price-dwn .download {
+  font-size: 15px;
+  display: block;
+  padding-top: 3px;
+  text-transform: uppercase;
+}
+
+.main-header .jumbotron .priceBox .btn {
+  background: #28acff;
+  border: 1px solid #28acff;
+  margin: 20px 6px 12px 0;
+  min-width: 150px;
+  font-size: 15px;
+}
+
+.main-header .jumbotron .priceBox .promo {
+  margin-top: 30px;
+  padding: 10px 10px 10px 15px;
+  background: rgba(255, 255, 255, 0.9);
+  line-height: 130%;
+  font-size: 110%;
+}
+
+.main-header .jumbotron .priceBox .promo a {
+  color: #333;
+}
+
+.main-header .jumbotron .priceBox .promo a h4 {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  color: #2c2c2c;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.main-header .jumbotron .priceBox .promo a p {
+  font-size: 14px;
+  margin: 3px 0 0 0;
+  line-height: 1.3;
+}
+
+.main-header .jumbotron .priceBox .promo a .specialL {
+  color: #009cff;
+}
+
+.sticky-nav {
+  width: 100vw;
+  background-color: #E6E6E6;
+  position: -webkit-sticky;
+  top: 0;
+  position: sticky;
+}
+
+.container-sub {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.subNav {
+  display: flex;
+  min-height: 8vh;
+  align-items: center;
+}
+
+.subNav a {
+  font-size: 18px;
+  padding: 17px 35px 18px;
+  color: #555;
+}
+
+.subNav a:hover {
+  background-color: whitesmoke;
+  color: black;
 }
 

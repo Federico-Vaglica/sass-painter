@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/app.css">
     <title>Painter</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'/>
 </head>
 <body>
     <header>
@@ -35,7 +36,7 @@
                 </ul>
             </div>
         </div>
-        <div class='main'>
+        <div class='main-header'>
             <div class='jumbotron'>
                 <div class='prod-info'>
                     <div class='title'>
@@ -50,27 +51,50 @@
                             <li>Incredible Speed</li>
                             <li>Built-in Learing</li>
                         </ul>
-                        <button>Downlod trial for (Win/Mac)</button>
+                        <div class='btn'>
+                            Download Trial <br>
+                            <span>(For Windows Mac)</span>
+                        </div>
                     </div>
                 </div>
                 <div class='priceBox'>
                     <div class='price'>
-                        <span>$49.99</span>
+                        <div class='price-dwn'>
+                            <span>$49.99</span>
+                            <span class='download'>Download</span>  
+                        </div>
+                        <div class='immagine'>
+                            <a href="#"><img src="img/moneyBack.png" alt="Money Back logo"></a>
+                        </div>
                     </div>
-                    <span class='download'>Download</span>
-                    <div class='button'>
-                        <button>BUY NOW</button>
+                    
+                    <div class='btn'>
+                        Buy Now
                     </div>
                     <div class='promo'>
                         <a href="#">
                             <h4>Limited time offer</h4>
                             <p>FREE Animations Essentials Brush Pack ($19.99 value)</p>
-                            <p>learn More</p>
+                            <p class='specialL'>Learn More</p>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+    <div class="sticky-nav">
+        <div class="container-sub">
+            <ul class='subNav'>
+                <a href="#"><li>Overview</li></a>
+                <a href="#"><li>Features</li></a>
+                <a href="#"><li>Compare</li></a>
+                <a href="#"><li>tech specs</li></a>
+                <a href="#"><li>Gallery</li></a>
+                <a href="#"><li>Learning</li></a>
+            </ul>
+        </div>
+    </div>
+
+    <script src="dist/app.js"></script>
 </body>
 </html>
