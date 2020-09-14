@@ -34,18 +34,12 @@ a {
   color: white;
 }
 
-.image-bg-01,
-.image-bg-02 {
-  width: 100%;
-}
-
 .container-sub {
   width: 60vw;
   margin: 0 auto;
 }
 
 header {
-  width: 100vw;
   background-color: #101010;
   color: white;
 }
@@ -210,11 +204,11 @@ header {
 }
 
 .sticky-nav {
-  width: 100%;
   background-color: #E6E6E6;
-  position: -webkit-sticky;
   top: 0;
+  position: -webkit-sticky;
   position: sticky;
+  z-index: 100;
 }
 
 .subNav {
@@ -248,22 +242,42 @@ header {
   font-size: 18px;
 }
 
-.first {
+.text-center {
   text-align: center;
 }
 
-.second {
+.second,
+.third {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 50px;
+  padding: 70px 0px;
+}
+
+.third .text-holder h3 {
+  padding-left: 20px;
+}
+
+.third .text-holder p {
+  padding-left: 20px;
 }
 
 .text-holder {
-  width: 50%;
+  width: 40%;
+}
+
+.text-holder h3 {
+  font-size: 24px;
+  margin-top: 90px;
+  margin-bottom: 30px;
+  font-weight: bolder;
 }
 
 .img-container {
-  width: 50%;
+  width: 60%;
+}
+
+.img-container img {
+  max-width: 100%;
 }
 
 .img-col {
@@ -272,5 +286,113 @@ header {
 
 .img-col img {
   width: 70%;
+}
+
+.background-img {
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg");
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.workflow {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  max-width: 1600px;
+  margin: 0 auto 40px;
+  padding: 50px 15px;
+}
+
+.five-col {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0px;
+}
+
+.one-col {
+  width: 20%;
+  padding: 0 15px;
+}
+
+.img-holder {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-holder img {
+  max-width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.img-holder:hover img {
+  transition: transform 0.5s ease;
+}
+
+.img-holder .caption {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.brush-pucks {
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/brushpacks-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container .two-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container .box {
+  width: 40%;
+  padding: 60px 0px;
+}
+
+.container .caption {
+  background-color: #fff;
+  text-align: center;
+  font-size: 18px;
+  padding: 60px 40px 80px;
+}
+
+.container .caption h3 {
+  padding: 20px 0px;
+}
+
+.container .caption p {
+  line-height: 1.6;
+}
+
+.ft-links {
+  background-color: #ececec;
+}
+
+.ft-links .container {
+  padding: 40px 0px;
+  display: flex;
+}
+
+.ft-links .container .row {
+  width: 25%;
+}
+
+.ft-links .container .row label h3 {
+  padding: 10px 0;
+}
+
+.ft-links .container .row ul li {
+  line-height: 1.8;
 }
 

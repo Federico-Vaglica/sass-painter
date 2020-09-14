@@ -1,0 +1,21 @@
+.ft-links{
+    background-color: #ececec;
+    .container{
+        padding: 40px 0px;
+        display: flex;
+        .row{
+            width: 25%;
+            label{
+                h3 {
+                    padding: 10px 0;
+                }
+            }
+
+            ul{
+                li {
+                    line-height: 1.8;
+                }
+            }
+        }
+    }
+}
