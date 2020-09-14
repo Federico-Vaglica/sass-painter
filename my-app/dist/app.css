@@ -18,12 +18,7 @@ ul {
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  touch-action: manipulation;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -88,8 +83,9 @@ header {
 .nav-header ul {
   font-size: 15px;
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
-  text-align: center;
+  align-items: flex-start;
 }
 
 .nav-header ul li {
@@ -100,6 +96,30 @@ header {
 .nav-header ul li:hover {
   color: black;
   background-color: white;
+}
+
+@media all and (max-width: 600px) {
+  .navbar {
+    min-width: 100%;
+    margin: 0 auto;
+  }
+
+  .nav-header {
+    display: flex;
+  }
+
+  .nav-header a {
+    display: none;
+  }
+
+  .nav-header ul {
+    font-size: 15px;
+  }
+
+  .nav-header ul li {
+    padding: 20px 30px;
+    display: block;
+  }
 }
 
 .main-header {

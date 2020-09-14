@@ -1,0 +1,90 @@
+.main-header {
+    background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    .jumbotron{
+        width: 70vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        .prod-info{
+            min-width: 40%;
+            padding: 30px 40px 10px;
+            .title{
+                line-height: 1.2;
+                font-size: 20px;
+            }
+            .description{
+                h1 {
+                    font-weight: lighter;
+                    font-size: 20px;
+                    padding-bottom: 20px;
+                }
+                ul {
+                    li{
+                        padding:10px 0px;
+                    }
+                }
+                .btn {
+                    background-color: $btnColor;
+                }
+            }
+        }
+
+        .priceBox{
+            background-color: black;
+            margin-top: 20px;
+            padding: 20px 20px;
+            max-width: 35%;
+            .price {
+                display: flex;
+                justify-content: space-between;
+                // padding: 20px 15px 0px;
+                font-size: 25px;
+                align-items: center;
+                .price-dwn{
+                    padding-top: 20px;
+                    .download{
+                        font-size: 15px;
+                        display: block;
+                        padding-top: 3px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .btn {
+                background: #28acff;
+                border: 1px solid #28acff;
+                margin: 20px 6px 12px 0;
+                min-width: 150px;
+                font-size: 15px;
+            }
+            .promo{
+                margin-top: 30px;
+                padding: 10px 10px 10px 15px;
+                background: rgba(255,255,255,.9);
+                line-height: 130%;
+                font-size: 110%;
+                a {
+                    color: #333;
+                    h4{
+                        text-transform: uppercase;
+                        margin: 0;
+                        padding: 0;
+                        color: #2c2c2c;
+                        font-weight: 500;
+                        line-height: 1.5;
+                    }
+                    p{
+                        font-size: 14px;
+                        margin: 3px 0 0 0;
+                        line-height: 1.3;
+                    }
+                    .specialL {
+                        color: #009cff;
+                    }
+                }
+            }
+        }
+    }
+}
